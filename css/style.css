@@ -1,0 +1,206 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+::selection {
+  background-color: transparent;
+}
+
+body {
+  background-color: #151515;
+  color: white;
+}
+
+.main-container {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin-top: 130px;
+
+}
+
+.magicLogo {
+  width: 350px;
+}
+
+.lifeCountContainer {
+  text-align: center;
+}
+
+.buttons {
+  width: 200px;
+}
+
+#FirstlifeUp {
+  cursor: pointer;
+  font-size: 50px;
+}
+
+#SecondLifeUp {
+  cursor: pointer;
+  font-size: 50px;
+}
+
+#FirstlifeDown {
+  cursor: pointer;
+  font-size: 50px;
+}
+
+#SecondLifeDown {
+  cursor: pointer;
+  font-size: 50px;
+}
+
+#FirstlifeCount {
+  font-size: 80px;
+  color: white;
+  font-weight: bolder;
+}
+
+#SecondLifeCount {
+  font-size: 80px;
+  color: white;
+  font-weight: bolder;
+}
+
+#digitalTimer {
+  font-size: 4rem;
+  color: white;
+  margin-top: 50px;
+}
+
+.playerName {
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px #dc3545;
+}
+
+#PlayerTwoName {
+  font-weight: bolder;
+}
+
+.timerIcons {
+  font-size: 40px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.playPauseStop {
+  margin-top: -20px;
+}
+
+.resetIcon {
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.selectGameMode {
+  padding: 25px;
+}
+
+
+
+@media (max-width: 990px) {
+  .timerIcons {
+    padding: 0px;
+
+  }
+
+  #digitalTimer {
+    font-size: 53px;
+  }
+
+}
+
+@media (max-width: 770px) {
+
+  .timerIcons {
+
+    font-size: 30px;
+
+  }
+
+  #digitalTimer {
+    font-size: 40px;
+
+  }
+
+
+}
+
+@media (min-width: 576px) {
+  .midleMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .magicLogo {
+    display: none;
+  }
+
+  #digitalTimer {
+    display: none;
+  }
+
+  .playPauseStop {
+    display: none;
+  }
+
+  .selectGameMode {
+    display: none;
+  }
+
+  .firstPlayer {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  .main-container {
+    margin-top: 80px;
+
+  }
+
+  .invertMobilefirst {
+    display: flex;
+    flex-direction: column-reverse;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    display: none;
+
+  }
+
+  .invertMobileTwo {
+    display: none;
+  }
+
+  .mobileLifeCount {
+    transform: rotate(180deg)
+  }
+
+  .midleMobile {
+    width: 100%;
+    height: auto;
+  }
+
+  #FirstlifeCount,
+  #SecondLifeCount {
+    font-size: 100px;
+  }
+
+  .resetIcon {
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  #FirstlifeCount,
+  #SecondLifeCount {
+    font-size: 80px;
+  }
+
+  .main-container {
+    margin-top: 20px;
+  }
+}

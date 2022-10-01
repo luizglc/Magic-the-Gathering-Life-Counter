@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magic the Gathering - Life Counter</title>
-
   <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- CSS Bootstrap -->
@@ -35,8 +34,7 @@
       </div>
       <!-- First player -->
       <div class="col-sm-4">
-        <div class="firstPlayer" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-          data-aos-duration="500">
+        <div class="firstPlayer">
           <div class="invertMobilefirst">
             <input type="text" placeholder="Set your nickname" id="PlayerOneNickname" required>
             <button class="btn btn-dark btnButtons" id="nickNameButtonOne" onclick="PlayerOneNickname()">OK</button>
@@ -52,11 +50,9 @@
       </div>
       <!-- midle of mobile -->
       <div class="midleMobile">
-
         <button class="btn btn-dark" type="submit" onclick="normalMode()">Normal</button>
         <button class="btn btn-dark" type="submit" onclick="ResetLifeCounter()">Reset</button>
         <button class="btn btn-dark" type="submit" onclick="comanderMode()">Comander</button>
-
       </div>
       <!-- Timer -->
       <div class="col-sm-4">
@@ -82,29 +78,22 @@
       </div>
       <!-- Second Player -->
       <div class="col-sm-4">
-        <div class="secondPlayer" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
-          data-aos-duration="500">
+        <div class="secondPlayer">
           <div class="invertMobileTwo">
             <input type="text" placeholder="Set your nickname" id="PlayerTwoNickname" required>
             <button class="btn btn-dark btnButtons" id="nickNameButtonTwo" onclick="PlayerTwoNickname()">OK</button>
             <h2 id="PlayerTwoName" class="playerName">Nickname</h2>
             <h3 id="playerTwoWins" class="playerWinsCount">Wins: 0</h3>
           </div>
-          <div class="mobileLifeCount">
+          <div class="">
             <i class="bi bi-arrow-up-short" id="SecondLifeUp" onclick="IncreaseSecondPlayerLife()"></i>
             <div id="SecondLifeCount">0</div>
-
             <i class="bi bi-arrow-down-short" id="SecondLifeDown" onclick="DecreaseSecondPlayerLife()"></i>
           </div>
         </div>
       </div>
     </div>
-    <!-- Reset life counter -->
-
-
-
   </section>
-
   <!-- AOS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

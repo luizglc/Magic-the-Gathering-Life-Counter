@@ -121,16 +121,7 @@ function PlayerOneNickname() {
   document.getElementById('PlayerOneNickname').value = ''
 }
 
-// document.addEventListener('keypress', function (e) {
 
-//   if (e.key === 'Enter') {
-
-//     document.querySelector('nickNameButtonOne');
-//     PlayerOneNickname()
-//   }
-// })
-
-//
 function PlayerTwoNickname() {
   const PlayerTwoNickname = document.getElementById('PlayerTwoNickname').value
   document.getElementById('PlayerTwoName').innerText = PlayerTwoNickname
@@ -138,16 +129,6 @@ function PlayerTwoNickname() {
 
 }
 
-// document.addEventListener('keypress', function (e) {
-
-//   if (e.key === 'Enter') {
-
-//     document.querySelector('nickNameButtonTwo');
-//     PlayerTwoNickname()
-
-
-//   }
-// })
 
 // -------------- Timer ---------------
 let hh = 0
